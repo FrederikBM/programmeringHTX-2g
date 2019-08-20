@@ -1,40 +1,38 @@
-int a = 243;
-int b = 180;
-int c = 155;
-int d = 240;
-int e = 240;
-
-
+int x = 0;
+int y = 0;
+float q = 0;
+float z = 0;
 
 void setup (){
   size(1000, 1000);
+  
 }
 
 
 void draw() { 
+  clear();
   background(155);
 //KIRBY
   fill(255,105,180);
 //øverste højre
-  ellipse(a, b, 40, 40);
+  ellipse(x+243, y+180, q + 40, q + 40);
 //øverste venstre
-  ellipse(c, b, 40, 40);
+  ellipse(x+155, y+180, q + 40, q + 40);
 //nederste venstre
   fill(255,50,50);
-  ellipse(c, d, 50, 50);
+  ellipse(x+155, y+240, q + 50, q + 50);
 //nederste højre
-  ellipse(e, d, 50, 50);
+  ellipse(x+240, y+240, q + 50, q + 50);
 //mave eller hovedet
   fill(255,105,180);
-  ellipse(b+20, b+20, 100, 100);
+  ellipse(x+200, y+200, q + 100, q + 100);
 //øjne
   fill(0,0,0);
-  ellipse(b+40, b+10, 10, 10);
-  ellipse(b+5, b+10, 10, 10);
+  ellipse(x+220, y+190, 10, 10);
+  ellipse(x+185, y+190, 10, 10);
 //bevægelse
-  a = a + 1;
-  b = b + 1;
-  c = c + 1;
-  d = d + 1;
-  e = e + 1;
+  x = x + 1;
+  y = y + 1;
+  z = z + 0.3;
+  q = q + 0.4;
 }
